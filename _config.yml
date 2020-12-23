@@ -3,3 +3,8 @@ theme: jekyll-theme-minimal
 permalink: /:categories/:year/:month/:title/
 title: Marius Sommerfeld
 description: This is my personal website where I present some personal projects and reference my internships and refer to some courses i liked.
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
