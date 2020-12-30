@@ -26,7 +26,8 @@ img{
 
 nav{
   position: sticky;
-  z-index: 1;
+  background: inherit;
+  z-index: 3;
 }
 
 nav ul{
@@ -40,6 +41,7 @@ nav ul{
   left: 0px;
   top: 0px;
   z-index: 1;
+  background: inherit;
 }
    
 nav li{
