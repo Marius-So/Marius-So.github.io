@@ -1,5 +1,8 @@
 _site/
 .sass_cache/
 .jekyl_cache/
-.jekyl_metadata
+.jekyl_metadata/
 testing/
+.jekyl_cache/
+.jekyl_metadata
+.sass_cache
