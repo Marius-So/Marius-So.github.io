@@ -1,3 +1,9 @@
+@import "navigation.scss";
+@import "footer.scss";
+@import "normalise.scss";
+@import "bootstrap/bootstrap.scss";
+
+
 body, ul, li, h1, h2, a{
   margin: 0;
   padding: 0;
@@ -8,7 +14,6 @@ body {background-image: url("/assets/images/startup.jpg");
       background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;} 
-
 
 body{
   background-color: #b8b7b7;
@@ -24,6 +29,7 @@ img{
     color: #f1c295;
   }
 
+<<<<<<< HEAD
 nav{
   position: sticky;
   background: inherit;
@@ -43,26 +49,9 @@ nav ul{
   z-index: 1;
   background: inherit;
 }
+=======
+>>>>>>> 2nd_try
    
-nav li{
-    font-size: 30px;
-    width: 25%;
-    display: inline-block;   
-    text-align: center; 
-    padding: 20px 0px;
-}
-nav li:hover{
-  font-size: 2em;
-  padding: 0.5em 0px;
-}
-
-nav li a{
-    text-decoration: none;
-    color: whitesmoke;
-    display: inline-block;
-    padding: 20px;
-}
-
 .content{
   z-index: 2;
   position: relative;
@@ -71,13 +60,17 @@ nav li a{
   background-color:aliceblue;
 }
 
-footer{
+/* footer{
   position: relative;
    bottom: 0;
    width:100%;
+<<<<<<< HEAD
    height:120px;   /* Height of the footer */
+=======
+   height:120px;   
+>>>>>>> 2nd_try
    background: black;
-}
+}*/
 
 div main{
   margin-top: 10%;
@@ -118,7 +111,11 @@ div main{
     color:#f1c295;
   }
 
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 2nd_try
 
 
 
