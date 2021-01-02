@@ -4,6 +4,7 @@ body, ul, li, h1, h2, a{
   font-family: arial;
 } 
 
+
 body {background-image: url("/assets/images/startup.jpg"); 
       background-attachment: fixed;
     background-size: 100%;
@@ -118,7 +119,7 @@ div main{
     color:#f1c295;
   }
 
-  
+  @import "navigation.scss"
 
 
 

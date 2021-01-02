@@ -1,8 +1,12 @@
 - name: Home
   link: /
+  data-content: Home
 - name: About
   link: /sites/about.html
+  data-content: t
 - name: Blog
   link: /sites/blog.html
+  data-content: t
 - name: Contact
   link: /sites/contact.html
+  data-content: t
