@@ -10,3 +10,6 @@
 - name: Contact
   link: /sites/contact.html
   data-content: t
+- name: resources
+  link: /sites/resources.html
+  data-content: t

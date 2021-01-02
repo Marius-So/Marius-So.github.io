@@ -1,7 +1,25 @@
-<nav class="main-nav">
-  <ul>
-    {% for item in site.data.navigation %}
-      <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
-    {% endfor %}
-  </ul>
-</nav>
+<!-- partial:index.partial.html -->
+<div class="overlay-navigation">
+  <nav role="navigation">
+    <ul>
+      {% for item in site.data.navigation %}
+      <li><a href="{{item.link}}" data-content="{{item.data-content}}" {% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+
+<section class="home">
+    <!-- <a href="https://codepen.io/fluxus/pen/gPWxXJ" target="_blank">Click for CSS version</a> -->
+  <div class="open-overlay">
+    <span class="bar-top"></span>
+    <span class="bar-middle"></span>
+    <span class="bar-bottom"></span>
+  </div>
+</section>
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js'></script>
+<script  src="/assets/js/main.js"></script>
