@@ -136,22 +136,23 @@
   width:34px;
   font-size:14px
 }
-.social-icons a.facebook:hover
+.social-icons a.spotify:hover
 {
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
+  background-color: #1ed760
 }
 .social-icons a.linkedin:hover
 {
   background-color:#007bb6
 }
-.social-icons a.dribbble:hover
+.social-icons a.xing:hover
 {
-  background-color:#ea4c89
+  background-color:#009090
 }
+.social-icons a.github:hover
+{
+  background-color:#24292E
+}
+
 @media (max-width:767px)
 {
   .social-icons li.title
@@ -160,4 +161,8 @@
     margin-right:0;
     font-weight:600
   }
+   .site-footer .social-icons {
+    text-align: left;
+}
+
 }

@@ -49,47 +49,6 @@ General styling
     font-weight: bold;
   }
 
-/* Header */
-
-.masthead {
-	text-align: center;
-	border-bottom: 1px solid hsl(0, 0%, 90%);
-}
-
-.intro {
-  margin: 0 auto;
-  padding: 1em 1em 2em;
-  max-width: 50em;
-  font-size: 90%;
-  text-align: left;
-  line-height: 1.4em;
-  columns: 2;
-  column-gap: 2em;
-}
-
-.intro p {
-  margin: 0 0 1em;
-} 
-
-/* Colophon section */
-.colophon {
-	padding: 2em;
-	background: hsl(0, 0%, 10%);
-	color: white;
-  font-size: 90%;
-	text-align: center;
-  line-height: 1.8em;
-}
-
-.colophon a {
-	color: white;
-}
-
-.colophon a:hover,
-.colophon a:focus {
-	border-bottom: 1px solid white;
-}
-
 /*--------------------------------------------------------------
 Cards:
 --------------------------------------------------------------*/
