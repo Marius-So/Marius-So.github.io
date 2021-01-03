@@ -8,18 +8,47 @@
     width: 100%;
 
 }
+
+.index{
+    color: #fff9f0;
+}
 .index h2{
     position: relative;
-    color: white;
     font-size: 30px;
 }
 .index h2 span{
     font-size: 1.5em;
 }
 
-.index p{
-    color: white;
+.index .textbox{
+    margin: 0%;
+    margin-top: 15%;
+    padding: 0%;
+    width: 100%;
+    background-color: hsla(0, 0%, 31%, 0.4);
+}
+
+.index .textbox p{
+    font-size: 18px;
     padding: 5%;
     width: 90%;
+}
+.index .textbox p a{
+    font-size: 18px;
+    color: antiquewhite;
+}
+
+@media screen and (min-width: 600px){
+    .index{
+        margin-top: 150px;
+    }
+    .index h2{
+        font-size: 50px;
+    }
+
+    .index .textbox{
+        margin-top: 100px;
+    }
+    
 
 }
