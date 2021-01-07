@@ -12,20 +12,22 @@ body, ul, li, h1, h2, a{
   font-family: arial;
 } 
 
+.content{
+  background-image: url("/assets/images/startup.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+
 .current {
     color: #f1c295;
   }
 
-/* .content{
-  z-index: 2;
-  position: relative;
-  margin-top: 65%;
-  margin-bottom: 0%;
-  background-color:aliceblue;
-} */
 
 div main{
-  margin-top: 10%;
+  margin-top: 0%;
   margin-left: 0%;
   margin-right: 0%;
   font-size: 20px;
