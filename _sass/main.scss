@@ -5,11 +5,12 @@
 @import "blogcards.scss";
 @import "index-styling.scss";
 @import "about-styling.scss";
+@import "resources-styling.scss";
 
 body, ul, li, h1, h2, a{
   margin: 0;
   padding: 0;
-  font-family: arial;
+  font-family: "Helvetica Neue";
 } 
 
 .content{

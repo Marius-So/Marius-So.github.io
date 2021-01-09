@@ -5,7 +5,6 @@
     text-align: center;
     position: relative;
     display: inline-block;
-    font-size: 100;
     z-index: 10;
     margin-top: 0%;
     background: none;
@@ -13,27 +12,81 @@
     padding-bottom:100px;
 }
 
+.start_block{
+    width:100%;
+    margin: 0%;
+    height: 600px;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(255, 249, 240, 0.631);
+    font-size: 26px;
+    
+}
+
 .content_block{
     width:80%;
     margin: 10%;
     height: 100%;
     background-color: rgba(255, 249, 240, 0.631);
+    font-size: 26px;
+    padding-bottom: 10px;
+    margin-bottom: 0%;
+    
 }
 .about h2{
+    font-weight: 200;
+    padding: 40px 40px;
     background: none;
+    font-size: 1.5em;
     }
 .about img{
-        width: 30%;
+        width: 60%;
+        max-width: 400px;
+        border-radius: 50%;
         }
 
 .about p{
     background: none;
+    padding: 40px 40px;
+    font-weight: 200;
+    text-align: justify;
     }
+
+.about p a{
+    color: inherit;
+    font-weight: 1.5em;
+}
+
+.about .download_button{
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: auto;
+    width: 200px;
+    margin-top: 2px;
+    margin-bottom: 40px;
+}
+.about .download_button a{
+    color: antiquewhite;
+    margin: 0%;
+    text-align: center;
+    display: inline-block;
+    padding: 0 10px;
+}
+.about .download_button:hover{
+    margin-top: 0px;
+    margin-bottom: 42px;
+    
+}
 
 @media (max-width: 850px) {
     .content_block{
         width:80%;
-        margin-top: 20%;
+        margin-top: 15%;
         height: 100%;
         background-color: rgba(255, 249, 240, 0.631);
 
