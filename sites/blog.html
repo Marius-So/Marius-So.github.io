@@ -8,19 +8,21 @@ title: posts
  -->
 <main id="content" class="main-area">
   <ul class="cards">
-    <li class="card-item double">
-     <a href="https://unsplash.com/@andozo?photo=crVO0UMdoVU" target="_blank" rel="nofollow">
-        <figure class="card">
-          <img src="https://source.unsplash.com/crVO0UMdoVU/600x600" alt="Beach. Photo by Andreas Rønningen">
-          <figcaption class="caption">
-            <h3 class="caption-title">Beach</h3>
-            <div class="location">Mølen, Nevlunghamn, Norway</div>
-            <p>This grid item spans one column and three rows to create focus. This is achieved by setting <code>grid-column: span 3;</code>.</p>
-          </figcaption>
-        </figure>
-      </a>
-    </li>
-    <li class="card-item">
+    {% for post in site.posts %}
+      <li class="card-item double">
+       <a href={{post.url}} target="_blank" rel="nofollow">
+          <figure class="card">
+            <img src="{{post.main_picture}}" alt="{{post.alt}}">
+            <figcaption class="caption">
+              <h3 class="caption-title">{{ post.title }}</h3>
+              <div class="location">Mølen, Nevlunghamn, Norway</div>
+              <p>This grid item spans one column and three rows to create focus. This is achieved by setting <code>grid-column: span 3;</code>.</p>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+    {% endfor %}
+    <!-- <li class="card-item">
       <a href="https://unsplash.com/@andozo?photo=xkMArBuwK44" target="_blank" rel="nofollow">
         <figure class="card">
           <img src="https://source.unsplash.com/xkMArBuwK44/600x600" alt="Pyramid. Photo by Andreas Rønningen">
@@ -126,7 +128,7 @@ title: posts
           </figcaption>
         </figure>
       </a>
-    </li>
+    </li> -->
   </ul>
 </main>
 </div>

@@ -9,3 +9,14 @@ title: "Page not found: 404"
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
+
+{% for post in site.posts %}
+  {% if post.categories contains 'postcategory' %}
+    <h1>Do nothing</h1>
+  {% else %}
+    <h2>{{ post.title }}</h2>
+    <p>{{post.main_picture}}</p>
+    <img src="{{post.main_picture}}">
+    <br>
+  {% endif %}
+{% endfor %}
