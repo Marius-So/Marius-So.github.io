@@ -34,14 +34,19 @@ General styling
     margin: 0;
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 100%;
-    font-size: 1.2em;
+	font-size: 1.2em;
+	border-radius: 20px;
   }
   
   .blog-grid img {
       display: block;
       border: 0;
-      width: 100%;
-      height: auto;
+      width: auto;
+	  height: auto;
+	  max-height: 300px;
+	  place-content: center;
+	  object-fit: cover;
+	  min-width: -webkit-fill-available;
   }
   
   .blog-grid code {
@@ -103,7 +108,7 @@ CSS Grid layout for wider screens, when browser supports grid:
 	@media screen and (min-width: 27em) {
 
 		.cards {
-			margin: 0 0;
+			/* margin: 0 0; */
 			padding: 1em;
 		}
     
