@@ -97,4 +97,29 @@
         background-color: rgba(255, 249, 240, 0.631);
 
     }
+
+@media (max-width: 599px){ 
+        .content_block{
+            margin: 0 0;
+            width:100%;
+            font-size: 1.3em;
+
+        }
+        .about h2{
+            padding-bottom: 0;
+            margin-top: 0px;
+        }
+        .hello{
+            margin-top: 0px;
+        }
+    }
+    
+    @media (max-width: 450px){ 
+        .content_block{
+            margin: 0 0;
+            width:100%;
+            font-size: 1.1em;
+
+        }
+    }
 }
