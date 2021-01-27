@@ -1,4 +1,56 @@
-.content article {
+.body{
     background-color: whitesmoke;
-    z-index: 1;
+    background-image: none;
+    margin-top: 0%;
+    min-height: 80vh;
 }
+
+.body .title{
+    text-align: center;
+    min-height: 250px;
+    position: relative;
+
+    background-position: center center;
+    
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.body .title div{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+}
+
+.article{
+    margin: 5% 10%;
+    font-size: 1.8em;
+    text-align: justify;
+}
+
+
+@media (max-width: 599px){ 
+    .title{
+        min-height: 270px;
+    }
+    .article{
+        font-size: 1.5em;
+        margin: 5% 10%;
+
+    }
+}
+
+@media (max-width: 899px){ 
+    .title{
+        min-height: 300px;
+    }
+    .article{
+        font-size: 1em;
+    }
+}
+

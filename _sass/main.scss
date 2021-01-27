@@ -14,14 +14,11 @@ body, ul, li, h1, h2, a{
   font-family: "Helvetica Neue";
 } 
 
-.content{
-  background-image: url("/assets/images/startup.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+ .content{
+  min-height: 80vh;
   width: 100%;
 }
-
+ 
 
 .current {
     color: #f1c295;
