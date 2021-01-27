@@ -1,10 +1,10 @@
-.content{
+/* .content{
     background-image: url("/assets/images/startup.jpg");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     width: 100%;
-  }
+  } */
 
 .about{
     color: black;
@@ -15,7 +15,12 @@
     margin-top: 0%;
     background: none;
     width: 100%;
-    padding-bottom:100px;
+    padding-bottom:0px;
+    background-image: url("/assets/images/startup.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
 }
 
 .start_block{
@@ -24,7 +29,7 @@
     height: 600px;
     text-align: center;
     font-size: 40px;
-    background-color: rgba(255, 249, 240, 0.631);
+    background-color: rgba(255, 249, 240, 0.831);
     font-size: 26px;
     
 }
@@ -33,10 +38,10 @@
     width:80%;
     margin: 10%;
     height: 100%;
-    background-color: rgba(255, 249, 240, 0.631);
+    background-color: rgba(255, 249, 240, 0.831);
     font-size: 26px;
     padding-bottom: 10px;
-    margin-bottom: 0%;
+    margin-bottom: 10%;
     
 }
 .about h2{
@@ -94,8 +99,6 @@
         width:80%;
         margin-top: 15%;
         height: 100%;
-        background-color: rgba(255, 249, 240, 0.631);
-
     }
 
 @media (max-width: 599px){ 
@@ -103,14 +106,21 @@
             margin: 0 0;
             width:100%;
             font-size: 1.3em;
+            
 
         }
         .about h2{
-            padding-bottom: 0;
+            padding-bottom: 20px;
             margin-top: 0px;
         }
         .hello{
             margin-top: 0px;
+        }
+        .content_block p{
+            padding: 20px 10%;
+        }
+        .about{
+            padding-bottom: 0px;
         }
     }
     
@@ -120,6 +130,12 @@
             width:100%;
             font-size: 1.1em;
 
+        }
+        .about p{
+            padding: 20px 10%;
+        }
+        .about{
+            padding-bottom: 0px;
         }
     }
 }
