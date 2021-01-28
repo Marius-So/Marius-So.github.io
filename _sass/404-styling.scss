@@ -31,21 +31,13 @@
     width: 80%;
     margin: 3% 10%;
 }
-.notfound .gif {
-    margin: 10% 10%;
-}
-
-.notfound .gif iframe{
-    height:  -webkit-fill-available;
-    width: 100%;
-    
-}
 
 .giphy-embed{
-    border-width: 0px;
-    width:max-content;
-    height: 100%;
-    position: inherit;
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-}
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+
+
