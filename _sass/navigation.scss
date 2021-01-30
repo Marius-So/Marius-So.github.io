@@ -158,10 +158,12 @@ Burger king
 
 .open-overlay {
   position: fixed;
-  right: 5rem;
+  right: 4rem;
   top: 3.2rem;
+  /* right: 3vh;
+  top: 3vh; */
   z-index: 100;
-  width: 34px;
+  width: 30px;
   display: block;
   cursor: pointer;
 }
@@ -169,39 +171,39 @@ Burger king
 .open-overlay span {
   display: block;
   height: 1px;
-  background-color: #fff;
+  background-color: black;
   cursor: pointer;
   margin-top: 8px;
 }
 
 .animate-top-bar {
-  -webkit-animation: animate-top-bar .6s linear 1 both;
-  animation: animate-top-bar .6s linear 1 both
+  -webkit-animation: animate-top-bar .5s linear 1 both;
+  animation: animate-top-bar .5s linear 1 both
 }
 
 .animate-bottom-bar {
-  -webkit-animation: animate-bottom-bar .6s linear 1 both;
-  animation: animate-bottom-bar .6s linear 1 both
+  -webkit-animation: animate-bottom-bar .5s linear 1 both;
+  animation: animate-bottom-bar .5s linear 1 both
 }
 
 .animate-middle-bar {
-  -webkit-animation: animate-middle-bar .6s linear 1 both;
-  animation: animate-middle-bar .6s linear 1 both
+  -webkit-animation: animate-middle-bar .5s linear 1 both;
+  animation: animate-middle-bar .5s linear 1 both
 }
 
 .animate-out-top-bar {
-  -webkit-animation: animate-out-top-bar .6s linear 1 both;
-  animation: animate-out-top-bar .6s linear 1 both
+  -webkit-animation: animate-out-top-bar .5s linear 1 both;
+  animation: animate-out-top-bar .5s linear 1 both
 }
 
 .animate-out-bottom-bar {
-  -webkit-animation: animate-out-bottom-bar .6s linear 1 both;
-  animation: animate-out-bottom-bar .6s linear 1 both
+  -webkit-animation: animate-out-bottom-bar .5s linear 1 both;
+  animation: animate-out-bottom-bar .5s linear 1 both
 }
 
 .animate-out-middle-bar {
-  -webkit-animation: animate-out-middle-bar .6s linear 1 both;
-  animation: animate-out-middle-bar .6s linear 1 both
+  -webkit-animation: animate-out-middle-bar .5s linear 1 both;
+  animation: animate-out-middle-bar .5s linear 1 both
 }
 
 
@@ -211,7 +213,7 @@ Animation keyframes
 
 @keyframes animate-top-bar {
   0% {
-    background-color: #fff;
+    background-color: black;
   }
   50% {
     -webkit-transform: translateY(9px);
@@ -225,13 +227,13 @@ Animation keyframes
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #29363B;
+    background-color: #fff;
   }
 }
 
 @keyframes animate-bottom-bar {
   0% {
-    background-color: #fff;
+    background-color: black;
   }
   50% {
     -webkit-transform: translateY(-9px);
@@ -245,25 +247,25 @@ Animation keyframes
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #29363B;
+    background-color: #fff;
   }
 }
 
 @keyframes animate-middle-bar {
   0% {
-    background-color: #fff;
+    background-color: black;
   }
   80% {
     background-color: #fff;
   }
   100% {
-    background-color: #29363B;
+    background-color: #fff;
   }
 }
 
 @keyframes animate-out-top-bar {
   0% {
-    background-color: #29363B
+    background-color: #fff
   }
   50% {
     -webkit-transform: translateY(9px);
@@ -272,18 +274,18 @@ Animation keyframes
   80% {
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
-    background-color: #29363B
+    background-color: black;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #FFF;
+    background-color:black;
   }
 }
 
 @keyframes animate-out-bottom-bar {
   0% {
-    background-color: #29363B
+    background-color: #fff
   }
   50% {
     -webkit-transform: translateY(-9px);
@@ -292,24 +294,24 @@ Animation keyframes
   80% {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    background-color: #29363B;
+    background-color: black;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    background-color: #FFF;
+    background-color: black;
   }
 }
 
 @keyframes animate-out-middle-bar {
   0% {
-    background-color: #29363B
+    background-color: #fff
   }
   80% {
-    background-color: #29363B;
+    background-color: black;
   }
   100% {
-    background-color: #fff;
+    background-color: black;
   }
 }
 
@@ -328,7 +330,7 @@ Animation keyframes
   border-bottom: 1px solid #222;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 3000px) {
   nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -350,7 +352,7 @@ Animation keyframes
     transform: translateY(0);
   }
   .open-overlay {
-    right: 1rem;
+    /* right: 1rem; */
   }
   nav li a:before {
     width: 30%;
@@ -360,3 +362,198 @@ Animation keyframes
 .post_navigation{
   
 }
+
+@keyframes w-animate-top-bar {
+  0% {
+    background-color: white;
+  }
+  50% {
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px)
+  }
+  80% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    background-color: #fff
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background-color: #fff;
+  }
+}
+
+@keyframes w-animate-bottom-bar {
+  0% {
+    background-color: white;
+  }
+  50% {
+    -webkit-transform: translateY(-9px);
+    transform: translateY(-9px)
+  }
+  80% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    background-color: #fff;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background-color: #fff;
+  }
+}
+
+@keyframes w-animate-middle-bar {
+  0% {
+    background-color: white;
+  }
+  80% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+
+@keyframes w-animate-out-top-bar {
+  0% {
+    background-color: #fff
+  }
+  50% {
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px)
+  }
+  80% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    background-color: white;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background-color:white;
+  }
+}
+
+@keyframes w-animate-out-bottom-bar {
+  0% {
+    background-color: #fff
+  }
+  50% {
+    -webkit-transform: translateY(-9px);
+    transform: translateY(-9px)
+  }
+  80% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    background-color: white;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background-color: white;
+  }
+}
+
+@keyframes w-animate-out-middle-bar {
+  0% {
+    background-color: #fff
+  }
+  80% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+
+.white-nav .open-overlay span {
+  display: block;
+  height: 1px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.white-nav .animate-top-bar {
+  -webkit-animation: w-animate-top-bar .5s linear 1 both;
+  animation: w-animate-top-bar .5s linear 1 both
+}
+
+.white-nav .animate-bottom-bar {
+  -webkit-animation: w-animate-bottom-bar .5s linear 1 both;
+  animation: w-animate-bottom-bar .5s linear 1 both
+}
+
+.white-nav .animate-middle-bar {
+  -webkit-animation: w-animate-middle-bar .5s linear 1 both;
+  animation: w-animate-middle-bar .5s linear 1 both
+}
+
+.white-nav .animate-out-top-bar {
+  -webkit-animation: w-animate-out-top-bar .5s linear 1 both;
+  animation: w-animate-out-top-bar .5s linear 1 both
+}
+
+.white-nav .animate-out-bottom-bar {
+  -webkit-animation: w-animate-out-bottom-bar .5s linear 1 both;
+  animation: w-animate-out-bottom-bar .5s linear 1 both
+}
+
+.white-nav .animate-out-middle-bar {
+  -webkit-animation: w-animate-out-middle-bar .5s linear 1 both;
+  animation: w-animate-out-middle-bar .5s linear 1 both
+}
+
+@media (max-width: 599px){
+  .open-overlay {
+    right: 1vh;
+    width: 25px;
+  }
+  .open-overlay span{
+    margin-top: 6px;
+  }
+
+  .white-nav .open-overlay span{
+    display: block;
+    height: 1px;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 6px;
+  }
+  
+  .white-nav .animate-top-bar {
+    -webkit-animation: animate-top-bar .5s linear 1 both;
+    animation: animate-top-bar .5s linear 1 both
+  }
+  
+  .white-nav .animate-bottom-bar {
+    -webkit-animation: animate-bottom-bar .5s linear 1 both;
+    animation: animate-bottom-bar .5s linear 1 both
+  }
+  
+  .white-nav .animate-middle-bar {
+    -webkit-animation: animate-middle-bar .5s linear 1 both;
+    animation: animate-middle-bar .5s linear 1 both
+  }
+  
+  .white-nav .animate-out-top-bar {
+    -webkit-animation: animate-out-top-bar .5s linear 1 both;
+    animation: animate-out-top-bar .5s linear 1 both
+  }
+  
+  .white-nav .animate-out-bottom-bar {
+    -webkit-animation: animate-out-bottom-bar .5s linear 1 both;
+    animation: animate-out-bottom-bar .5s linear 1 both
+  }
+  
+  .white-nav .animate-out-middle-bar {
+    -webkit-animation: animate-out-middle-bar .5s linear 1 both;
+    animation: animate-out-middle-bar .5s linear 1 both
+  }
+  
+}
+
+
+
+

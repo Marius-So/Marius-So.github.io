@@ -5,8 +5,10 @@
   </head>
   <body>
     
-
-  {% include navigation.html %}
+  <div {% if page.nav == 'white'%} class="white-nav"{% endif %}>
+    {% include navigation.html %}
+  </div>
+ 
 
   <div class="content">
  
