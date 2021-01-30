@@ -1,5 +1,9 @@
 .outerresources{
-    background-color: gainsboro;
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_1280.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+	width: 100%;
 }
 
 .resources{
@@ -12,7 +16,7 @@
     background: none;
     width: 100%;
     padding-bottom:100px;
-    background-color: #fff9f0a1;
+    background-color: #fff9f0d4;
     width: 80%;
     margin: 10%;
     font-size: 20px;
