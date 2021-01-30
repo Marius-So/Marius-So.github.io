@@ -192,7 +192,7 @@
   
   .contact2-form-bgbtn {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     width: 300%;
     height: 100%;
     background: #fff9f0a1;
@@ -285,6 +285,7 @@
   
   .alert-validate::after {
     content: "\f12a";
+    font-family: FontAwesome;
     display: block;
     position: absolute;
     color: #c80000;
@@ -309,4 +310,17 @@
       opacity: 1;
     }
   }
-
+  button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  iframe {
+    border: none !important;
+  }
+  
