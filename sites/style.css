@@ -1,216 +1,142 @@
-/*--------------------------------------------------------------
-Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers */
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* START CSS VARIABLES */
+:root {
+    --body-background: #f7f8fc;
+    --card-background: #add8e6;
+    --card-background-hover: #71c2dd;
+    --tag-background: #777777;
+    --tag-text: #ffffff;
+    --tag-design: #f06b3a;
+    --tag-popular: #800080;
+    --tag-webdev: #0000ff;
+    --user-postdate: #4b4a4a;
 }
+/* END CSS VARIABLES */
 
-.screen-reader-text:hover,
-.screen-reader-text:active,
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar */
-} 
 
-/*--------------------------------------------------------------
-General styling
---------------------------------------------------------------*/
-.blog-grid body {
-  margin: 0;
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  font-size: 100%;
-  font-size: 1.2em;
+/* START CSS RESET + COMMON STYLES */
+* {
+    box-sizing: border-box;
 }
-
-.blog-grid img {
-	display: block;
-	border: 0;
-	width: 100%;
-	height: auto;
+body {
+    animation: fadeInPage ease 1.5s; /* fade page in */
+    animation-iteration-count: 1; /* fade page in */
+    animation-fill-mode: forwards; /* fade page in */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--body-background);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;    
 }
+/* END CSS RESET + COMMON STYLES */
 
-.blog-grid code {
-	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-weight: bold;
+
+/* START OUTER CONTAINER STYLES */
+.outer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin: auto;
+    padding: 1.875rem;
+    width: 66.75rem;
 }
-
-/* Header */
-
-.masthead {
-	text-align: center;
-	border-bottom: 1px solid hsl(0, 0%, 90%);
+.card {
+    background-color: var(--card-background);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 1.25rem rgba(0,0,0,0.2);
+    cursor: pointer;
+    opacity: 0.85;
+    overflow: hidden;
+    width: 18.75rem;
+    transition: background-color 400ms ease-out, 
+                opacity 400ms ease-out;
 }
-
-.intro {
-  margin: 0 auto;
-  padding: 1em 1em 2em;
-  max-width: 50em;
-  font-size: 90%;
-  text-align: left;
-  line-height: 1.4em;
-  columns: 2;
-  column-gap: 2em;
+.card:hover, 
+.card:active {
+    background-color: var(--card-background-hover);
+    opacity: 1;
 }
-
-.intro p {
-  margin: 0 0 1em;
+.card-header img {
+    height: 12.5rem;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 400ms ease-out;
 }
-
-/* Colophon section */
-.colophon {
-	padding: 2em;
-	background: hsl(0, 0%, 10%);
-	color: white;
-  font-size: 90%;
-	text-align: center;
-  line-height: 1.8em;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: 15.625rem;
+    padding: 1.25rem;
 }
-
-.colophon a {
-	color: white;
+.card-body h4 {
+    margin: 0.625rem 0;
 }
-
-.colophon a:hover,
-.colophon a:focus {
-	border-bottom: 1px solid white;
+.card-body p {
+    font-size: 0.8125rem;
+    margin: 0 0 2.5rem;
 }
-
-/*--------------------------------------------------------------
-Cards:
---------------------------------------------------------------*/
-
-.cards {
-	max-width: 25em;
-	margin: 1em auto;
-	padding: 0;
-	list-style-type: none;
-
+.tag {
+    background: var(--tag-background);
+    border-radius: 3.125rem;
+    color: var(--tag-text);
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0.125rem 0.625rem;
+    text-transform: uppercase;
 }
-
-.cards a {
-	display: block;
-	margin-bottom: 1em;
-	text-decoration: none;
+.tag-design {
+    background-color: var(--tag-design);
 }
-
-.caption {
-	padding: 1em;
-	font-size: 90%;
-	color: black;
+.tag-popular {
+    background-color: var(--tag-popular);
 }
-
-.caption-title {
-	margin: 0;
-	font-size: 1.4em;
-	line-height: 1em;
+.tag-webdev {
+    background-color: var(--tag-webdev);
 }
-
-.location {
-  padding: .5em 0;
-  color: hsl(0, 0%, 40%);
+.user {
+    display: flex;
+    margin-top: auto;
 }
-
-.caption p {
-	margin-top: .5em;
-	margin-bottom: 0;
-  line-height: 1.3em;
+.user img {
+    border-radius: 50%;
+    margin-right: 0.625rem;
+    height: 2.5rem;
+    width: 2.5rem;
 }
-
-.cards a:focus .caption,
-.cards a:hover .caption {
-	background: hsl(0, 0%, 97%);
+.user-info h5 {
+    margin: 0;
 }
+.user-info small {
+    color: var(--user-postdate);
+}
+/* END OUTER CONTAINER STYLES */
 
-/*--------------------------------------------------------------
-CSS Grid layout for wider screens, when browser supports grid:
---------------------------------------------------------------*/
-@supports (grid-area: auto) {
 
-	@media screen and (min-width: 27em) {
-
-		.cards {
-			margin: 0 auto;
-			padding: 1em;
-		}
-    
-    .card-item,
-    .card-item a {
-      display: flex;
-      align-items: stretch;
-      width: 100%;
+/* KEYFRAMES */
+/* Fade In Webpage Keyframe */
+@keyframes fadeInPage {
+    0% {
+        opacity: 0;
     }
-
-    .cards a:focus,
-		.cards a:hover {
-			outline: 1px solid hsl(0, 0%, 80%);
-		}
-    
-    .cards a:focus .caption,
-    .cards a:hover .caption {
-      background: white;
+    100% {
+        opacity: 1;
     }
-    
-		.card {
-			margin: .5em;
-			display: grid;
-			grid-template-columns: 8em auto;
-      overflow: hidden;
-		}
-    
-    .card img {
-/*       height: 100%;
-      width: auto; */
-    }
-    
-    .caption {
-      background: white;
-    }
-    
-	}
+}
 
-	@media screen and (min-width: 62em) {
 
-		.cards {
-			max-width: none;
-			margin: 1em 0;
-      padding: 0 1em;
-			display: grid;
-			grid-template-columns: repeat(auto-fit, 25em);
-			grid-gap: 1em;
-			justify-content: center;
-		}
-
-		.double {
-			grid-row: span 3;
-		}
-
-		.double .card {
-			display: block;
-		}
-    
-    .double img {
-      height: calc( (100% / 3) * 2 + .5em);
-    }
-
-	}
-
+/* MEDIA QUERIES */
+@media(max-width: 940px) {
+    .outer-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }  
+}
+@media(max-width: 640px) {
+    .outer-container {
+        grid-template-columns: 1fr;
+    }  
 }
