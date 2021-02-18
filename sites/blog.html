@@ -4,11 +4,16 @@ title: Personal Blog
 ---
 
 <div class="blog">
+<div class="placeholder">
+ <h1></h1>
+</div>
 <div class="blogtitle">
   <div>
       <h1>BLOG</h1>
   </div>
 </div>
+
+<div class="restrics-grid">
 
 <div class="blog-grid">
 
@@ -20,7 +25,7 @@ title: Personal Blog
               <img src="{{post.main_picture}}" alt="css language">
           </div>
           <div class="card-body">
-              <span class="tag tag-webdev">Webdev</span>
+              <span class="tag tag-{{post.category}}">{{post.category}}</span>
               <h4>{{ post.title }}</h4>
               <p>{{post.subcaption}}</p>
               <div class="user">
@@ -35,5 +40,6 @@ title: Personal Blog
     {% endfor %}
     </div>
   </div>
+</div>
 </div>
 </div>

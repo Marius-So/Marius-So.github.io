@@ -3,28 +3,48 @@
 /* START CSS VARIABLES */
 :root {
     --body-background: #f7f8fc;
-    --card-background: #add8e6;
+    --card-background: #fffbf5;
     --card-background-hover: #71c2dd;
     --tag-background: #777777;
     --tag-text: #ffffff;
     --tag-design: #f06b3a;
     --tag-popular: #800080;
     --tag-webdev: #0000ff;
+    --tag-Handcraft: #414141;
     --user-postdate: #4b4a4a;
 }
 /* END CSS VARIABLES */
+.placeholder {
+    height: 10vh;
+    margin-top: -5vh;
+}
+.placeholder h1{
+    margin-top: 0px;
+}
 
-
-/* START CSS RESET + COMMON STYLES */
-
-/* END CSS RESET + COMMON STYLES */
-
+.blogtitle {
+    min-height: min(20vh,200px);
+}
+.blogtitle div{
+       text-align: center;
+       position: relative;
+       top: 50%;
+       transform: translate(0, -50%);
+}
 
 /* START OUTER CONTAINER STYLES */
+.restrics-grid
+{
+    max-width: min(90%,1300px);
+    
+    margin: auto;
+    padding-bottom: 50px;
+}
+
 .outer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
+    gap: 3.5rem;
     margin: 0px;
     padding: 0%;
     width: 100%;
@@ -51,6 +71,11 @@
     width: 100%;
     object-fit: cover;
     transition: opacity 400ms ease-out;
+}
+.card-header{
+    padding: 0px;
+    margin-bottom: 0px;
+    border-bottom: none;
 }
 .card-body {
     display: flex;
@@ -83,6 +108,9 @@
 }
 .tag-webdev {
     background-color: var(--tag-webdev);
+}
+.tag-Handcraft {
+    background-color: var(--tag-Handcraft);
 }
 .user {
     display: flex;
@@ -120,11 +148,31 @@
     .outer-container {
         grid-template-columns: repeat(2, 1fr);
 		justify-items: center;
-		gap: 1.25rem;
+        row-gap: 2.5rem;
+    }
+    .restrics-grid{
+        margin-left: 10%;
+        margin-right: 10%;
     }  
 }
 @media(max-width: 500px) {
     .outer-container {
         grid-template-columns: 1fr;
+        row-gap: 1.25rem;
     }  
+}
+
+@media(min-width: 1200px) {
+    .card {
+        flex-direction: row;
+        min-width: 30rem;
+    }  
+
+    .card-header{
+        max-width: 35%;
+    }
+
+    .card-header img {
+        height: 16rem;
+    }
 }
