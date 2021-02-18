@@ -20,6 +20,7 @@ title: Personal Blog
   <div>
     <div class="outer-container">
     {% for post in site.posts %}
+    <a href={{post.url}} target="link" rel="nofollow">
       <div class="card">
           <div class="card-header">
               <img src="{{post.main_picture}}" alt="css language">
@@ -37,6 +38,7 @@ title: Personal Blog
               </div>
           </div>
       </div>
+    </a>
     {% endfor %}
     </div>
   </div>
