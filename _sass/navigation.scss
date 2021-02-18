@@ -134,15 +134,15 @@ nav li:nth-of-type(2) {
 }
 
 nav li:nth-of-type(3) {
-  background-color:#29363B 
+  background-color:rgb(50, 66, 73) 
 }
 
 nav li:nth-of-type(4) {
-  background-color: #777970
+  background-color: rgb(107, 105, 102)
 }
 
 nav li:nth-of-type(5) {
-  background-color: #3B3A30
+  background-color: #a5a4a1
 }
 
 /* 
@@ -159,7 +159,7 @@ Burger king
 .open-overlay {
   position: fixed;
   right: 4rem;
-  top: 3.2rem;
+  top: 3.2rem;;
   /* right: 3vh;
   top: 3vh; */
   z-index: 100;
@@ -552,6 +552,22 @@ Animation keyframes
     animation: animate-out-middle-bar .5s linear 1 both
   }
   
+}
+
+@media (min-width: 1400px){
+  .open-overlay {
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    z-index: 100;
+    width: 3%;
+    display: block;
+    cursor: pointer;
+  }
+
+  .open-overlay span {
+    margin-top: 25%;
+  }
 }
 
 
