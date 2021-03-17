@@ -4,8 +4,8 @@
 - name: About
   link: /sites/about.html
   data-content: t
-- name: Blog
-  link: /sites/blog.html
+- name: Resume
+  link: /sites/resume.html
   data-content: t
 - name: Contact
   link: /sites/contact.html
