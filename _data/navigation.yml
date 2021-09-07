@@ -4,9 +4,9 @@
 - name: About
   link: /sites/about.html
   data-content: t
-- name: Resume
-  link: /sites/resume.html
-  data-content: t
+# - name: Resume
+#   link: /sites/resume.html
+#   data-content: t
 - name: Contact
   link: /sites/contact.html
   data-content: t
