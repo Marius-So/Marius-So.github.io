@@ -1,4 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v34-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v34-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v34-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v34-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v34-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/open-sans-v34-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans-v34-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v34-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v34-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v34-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v34-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');*/
 
 /* START CSS VARIABLES */
 :root {
@@ -36,7 +62,7 @@
 .restrics-grid
 {
     max-width: min(90%,1300px);
-    
+
     margin: auto;
     padding-bottom: 50px;
 }
@@ -69,10 +95,10 @@
     opacity: 0.85;
     overflow: hidden;
     width: 18.75rem;
-    transition: background-color 400ms ease-out, 
+    transition: background-color 400ms ease-out,
                 opacity 400ms ease-out;
 }
-.card:hover, 
+.card:hover,
 .card:active {
     background-color: var(--card-background-hover);
     opacity: 1;
@@ -164,20 +190,20 @@
     .restrics-grid{
         margin-left: 10%;
         margin-right: 10%;
-    }  
+    }
 }
 @media(max-width: 500px) {
     .outer-container {
         grid-template-columns: 1fr;
         row-gap: 1.25rem;
-    }  
+    }
 }
 
 @media(min-width: 1200px) {
     .card {
         flex-direction: row;
         min-width: 30rem;
-    }  
+    }
 
     .card-header{
         max-width: 35%;
